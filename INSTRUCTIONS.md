@@ -18,13 +18,13 @@ Running the server code requires `nodemon`. If you don't already have `nodemon`,
 
 ```
 [x] npm install
-[ ] npm run server
+[x] npm run server
 ```
 
 Now that the server is running, open a new terminal tab with `cmd + t` and start the react client app.
 
 ```
-[ ] npm run client
+[x] npm run client
 ```
 
 Between the server and client, you'll need two terminal tabs! Because we're using `nodemon`, both our client side and server side will automatically spin back up when changes are made!
@@ -51,7 +51,7 @@ To practice passing values through `props` in React, you will build the gallery 
 ![mockup two](wireframes/second-mockup.png)
 
 ### Task List
-    [ ] - Use `axios` to retrieve (`GET`) data from to `/gallery` and store it in `App.jsx`.
+    [x] - Use `axios` to retrieve (`GET`) data from to `/gallery` and store it in `App.jsx`.
     [ ] - Create a new **component** for the `GalleryList` and pass it the gallery data stored in `App` via `props`.
     [ ] - Iterate (loop over) the list of gallery data
     [ ] - Make GalleryItems
