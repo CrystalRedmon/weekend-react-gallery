@@ -7,7 +7,6 @@
 There is no database component to base mode. 
 
 ######All data is stored in an array on the server.######
-
 [ ] Before you get started, 
         [x] Add a few images to the `public/images` folder and 
         [ ] Modify the `server/modules/data.js` to include an `id`, `title`, `description` and `path for` each of your images. 
