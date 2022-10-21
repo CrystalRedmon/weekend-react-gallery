@@ -1,4 +1,5 @@
 
+import React from 'react';
 import { useState } from "react";
 /// All of the work is done here on the gallery item. 
 /// Call a function in the button that will change the number of likes
@@ -14,18 +15,9 @@ function GalleryItem({ item }) {
 
 
     const likeItem = () => {
-
         setLikes(likes + 1)
-        
+        console.log('Inside add likes, ', likes);
     };
-
-
-
-
-
-
-
-
 
 
 
@@ -37,7 +29,7 @@ function GalleryItem({ item }) {
             <br />
             <button onClick={likeItem}>Love This Image!</button>
 
-            <p>{item.likes} Love This Image</p>
+            <p>{likes} Love This Image</p>
         </li>
 
 
