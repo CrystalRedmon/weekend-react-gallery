@@ -52,7 +52,7 @@ To practice passing values through `props` in React, you will build the gallery 
 
 ### Task List
     [x] - Use `axios` to retrieve (`GET`) data from to `/gallery` and store it in `App.jsx`.
-    [ ] - Create a new **component** for the `GalleryList` and pass it the gallery data stored in `App` via `props`.
+    [x] - Create a new **component** for the `GalleryList` and pass it the gallery data stored in `App` via `props`.
     [ ] - Iterate (loop over) the list of gallery data
     [ ] - Make GalleryItems
 
