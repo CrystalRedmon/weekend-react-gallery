@@ -1,5 +1,7 @@
 const express = require('express');
 const router = express.Router();
+///⬇️ TYPICALLY POOL WOULD BE REQUIRED AND A DB WOULD BE ACCESSED. THE GALLERY.DATA.js FILE IS REQUIRED REQUIRED INSTEAD.
+// WHEN GET IS CALLED IT WILL GET THE INFORMATION FROM THE GALLERY.DATA.js FILE
 const galleryItems = require('../modules/gallery.data');
 
 // DO NOT MODIFY THIS FILE FOR BASE MODE
