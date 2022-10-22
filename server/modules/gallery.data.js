@@ -10,16 +10,16 @@
 const galleryItems = [
     {
         id: 1,
-        path: 'images/goat_small.jpg',
-        title: 'Goat guy',
-        description: 'Photo of a goat taken at Glacier National Park.',
+        path: 'images/yellow_roses.jpg',
+        title: 'Beauty Expiring',
+        description: 'A bunch of yellow roses on the verge of wilting.',
         likes: 0
     },
 
     { id: 2, 
-        path: 'images/bulldog.jpg', 
-        title: 'Bully Baby',
-        description: 'Photo of a cute bull dog.', 
+        path: 'images/blue_water_lily.jpg', 
+        title: 'Water lily',
+        description: 'Water lily love.', 
         likes: 0 },
 
     { id: 3, 

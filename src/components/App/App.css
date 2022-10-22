@@ -53,3 +53,6 @@
   width: 200px;
 }
 
+.change:hover{
+  cursor: pointer;
+}

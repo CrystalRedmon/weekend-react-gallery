@@ -29,7 +29,7 @@ function GalleryItem({ item }) {
             {active ?
 
                 (<div>
-                    <img onClick={changeHandler} src={item.path} style={{ width: 200 }} alt="Dog" />
+                    <img class="change" onClick={changeHandler} src={item.path} style={{ width: 200 }} alt="Dog" />
                     <br />
                     <button onClick={likeItem}>Love This Image!</button>
                     <p>{likes} Love This Image</p>
@@ -38,7 +38,7 @@ function GalleryItem({ item }) {
                 :
 
                 (<div>
-                    <div onClick={changeHandler}>{item.description}</div>
+                    <div class="change" onClick={changeHandler}>{item.description}</div>
                     <br />
                     <button onClick={likeItem}>Love This Image!</button>
                     <p>{likes} Love This Image</p>
