@@ -21,11 +21,18 @@ function GalleryItem({ item }) {
 
 
 
+    const seeDescription =() =>{
+        console.log('Description has been clicked')
+
+    }
+
+
+
     return (<>
 
 
         <li>
-            <img src={item.path} style={{ width: 200 }} alt="Dog" />
+            <img src={item.path} style={{ width: 200 }} alt="Dog" onClick={seeDescription}/>
             <br />
             <button onClick={likeItem}>Love This Image!</button>
 
