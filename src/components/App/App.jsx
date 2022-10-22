@@ -29,10 +29,10 @@ function App() {
 
   const addLike = () => {
     axios.put('/gallery')
-    .then(response => {
-      console.log('PUT successful, ')
-      getGallery();
-    })
+      .then(response => {
+        console.log('PUT successful, ')
+        getGallery();
+      })
 
 
 
@@ -46,14 +46,14 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className="App-title">Gallery of My Life</h1>
+        <h1 className="App-title">Flora Finds</h1>
       </header>
+      <main className="gallery_container">
+        <GalleryList
+          galleryList={galleryList}
 
-      <GalleryList
-        galleryList={galleryList}
-
-      />
-
+        />
+      </main>
     </div>
   );
 }

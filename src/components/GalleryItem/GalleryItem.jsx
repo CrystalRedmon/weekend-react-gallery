@@ -24,7 +24,7 @@ function GalleryItem({ item }) {
     return (<>
 
 
-        <div className="container">
+        <div className="image_container">
 
             {active ?
 
@@ -38,7 +38,7 @@ function GalleryItem({ item }) {
                 :
 
                 (<div>
-                    <p onClick={changeHandler} >{item.description}</p>
+                    <div onClick={changeHandler}>{item.description}</div>
                     <br />
                     <button onClick={likeItem}>Love This Image!</button>
                     <p>{likes} Love This Image</p>
