@@ -19,7 +19,7 @@ const galleryItems = [
     { id: 2, 
         path: 'images/blue_water_lily.jpg', 
         title: 'Water lily',
-        description: 'Water lily love.', 
+        description: 'Water lily loveb.', 
         likes: 0 },
 
     { id: 3, 
