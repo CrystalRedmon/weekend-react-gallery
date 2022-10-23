@@ -21,7 +21,7 @@ A gallery to store and share flora images was requested. This gallery allows vis
 1. Once the application is open visitors can view any shared images.
 2. Visitors may indicate they love the image by clicking the "Love This Image" button. When the button is clicked the  additional like is added to the "Love This Image" count under the button. 
 3. Visitors can hover over an image to reveal that it is clickable.
-4. When the image is clicked the image is replaced with a description of the image. The visitor can click the description to bring back the image. 
+4. When the image is clicked the image is replaced with a description of the image. The visitor can click the description to return to the image. 
 
 
 #Built With
