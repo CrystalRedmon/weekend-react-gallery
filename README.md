@@ -31,6 +31,7 @@ A gallery to store and share flora images was requested. This gallery allows vis
 - JavaScript
 - CSS
 - HTML
+- Postgres/Postico
 
 
 
