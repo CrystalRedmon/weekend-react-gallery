@@ -18,7 +18,6 @@ function App() {
     axios.put(`/gallery/like/${itemID}`, {likes} )
     
       .then(response => {
-        console.log('PUT successful, ')
         getGallery();
       }).catch(error=>{
         console.log('Error, like not added: ', error);
