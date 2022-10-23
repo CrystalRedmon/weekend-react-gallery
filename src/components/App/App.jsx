@@ -7,11 +7,26 @@ import './App.css';
 
 function App() {
   const [galleryList, setGalleryList] = useState([]);
-
+  
+  
   useEffect(() => {
 
     getGallery();
   }, [])
+
+  const addLike = (itemID, likes) => {
+    axios.put(`/gallery/like/${itemID}`, {likes} )
+    
+      .then(response => {
+        console.log('PUT successful, ')
+        getGallery();
+      }).catch(error=>{
+        console.log('Error, like not added: ', error);
+      });
+  };
+
+
+
 
 
   const getGallery = () => {
@@ -27,17 +42,7 @@ function App() {
 
   }
 
-  const addLike = () => {
-    axios.put('/gallery')
-      .then(response => {
-        console.log('PUT successful, ')
-        getGallery();
-      })
 
-
-
-
-  }
 
 
 
@@ -51,6 +56,8 @@ function App() {
       <main className="gallery_container">
         <GalleryList
           galleryList={galleryList}
+          addLike={addLike}
+          
 
         />
       </main>
