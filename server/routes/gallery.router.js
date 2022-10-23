@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 ///⬇️ TYPICALLY POOL WOULD BE REQUIRED AND A DB WOULD BE ACCESSED. THE GALLERY.DATA.js FILE IS REQUIRED REQUIRED INSTEAD.
 // WHEN GET IS CALLED IT WILL GET THE INFORMATION FROM THE GALLERY.DATA.js FILE
-const galleryItems = require('../modules/gallery.data');
+const pool = require('../modules/pool');
 
 // DO NOT MODIFY THIS FILE FOR BASE MODE
 
@@ -20,7 +20,13 @@ router.put('/like/:id', (req, res) => {
 
 // GET Route
 router.get('/', (req, res) => {
-    res.send(galleryItems);
+    pool.query(`SELECT * FROM "gallery"`)
+    .then(dbRes=>{
+        res.send(dbRes.rows);
+    })
+    .catch(error=>{
+        console.log('Unable to get tasks from DB: ', error);
+    });
 }); // END GET Route
 
 module.exports = router;
